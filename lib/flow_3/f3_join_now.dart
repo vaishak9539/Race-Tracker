@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:race_tracker/flow_3/f3_payement_details2.dart';
 
 class F3JoinNow extends StatefulWidget {
   const F3JoinNow({super.key});
@@ -168,24 +169,29 @@ class _F3JoinNowState extends State<F3JoinNow> {
           SizedBox(
             height: height/5,
           ),
-           Container(
-                height: height / 23,
-                width: width / 3,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(40),
-                    color: Color(0xff325CF0)),
-                child: Center(
-                  child: Text(
-                    "NEXT",
-                    style: GoogleFonts.poppins(
-                        textStyle: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 18,
-                            fontStyle: FontStyle.italic,
-                            color: Colors.white)),
+           InkWell(
+            onTap:() {
+             Navigator.push(context, MaterialPageRoute(builder: (context) => F3PayementDetails2(),)); 
+            },
+             child: Container(
+                  height: height / 23,
+                  width: width / 3,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(40),
+                      color: Color(0xff325CF0)),
+                  child: Center(
+                    child: Text(
+                      "NEXT",
+                      style: GoogleFonts.poppins(
+                          textStyle: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 18,
+                              fontStyle: FontStyle.italic,
+                              color: Colors.white)),
+                    ),
                   ),
                 ),
-              ),
+           ),
         ],
       ),
     );

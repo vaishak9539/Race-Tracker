@@ -28,15 +28,15 @@ class _F4HomeState extends State<F4Home> {
           ),
           BottomNavigationBarItem(
           icon: Image.asset("assets/image/helmet.png",width: 40,),
-          label: "Helmet"
+          label: "BNB2"
           ),
           BottomNavigationBarItem(
           icon: Image.asset("assets/image/Btrack.png",width: 40,),
-          label: "track"
+          label: "BNB3"
           ),
            BottomNavigationBarItem(
           icon: Icon(Icons.settings),
-          label: "settings"
+          label: "BNB4"
           ),
       ],
       currentIndex: selectedindex,

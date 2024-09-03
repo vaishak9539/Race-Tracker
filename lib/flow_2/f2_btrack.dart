@@ -269,11 +269,11 @@ class _F2BtrackState extends State<F2Btrack> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     FloatingActionButton(
-                      shape: BeveledRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
                         side: BorderSide(width: 1)
                         ),
-                      backgroundColor: Colors.amber,
+                      backgroundColor: Colors.white,
                       onPressed: (){
                          Navigator.push(context, MaterialPageRoute(builder: (context) => F2UploadImage(),));
                       },child: Icon(Icons.add,size: 50,),)

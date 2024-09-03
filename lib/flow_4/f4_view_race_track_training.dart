@@ -3,6 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:race_tracker/flow_4/f4_gallery.dart';
 import 'package:race_tracker/flow_4/f4_home.dart';
 import 'package:race_tracker/flow_4/f4_instructors.dart';
 import 'package:race_tracker/flow_4/f4_track.dart';
@@ -309,11 +310,11 @@ class _F4viewRaceTrackTrainingState extends State<F4viewRaceTrackTraining> {
                   padding: const EdgeInsets.only(left: 59),
                   child: IconButton(
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //       builder: (context) => F3RacrGallery(),
-                      //     ));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => F4Gallery(),
+                          ));
                     },
                     icon: Icon(
                       Icons.arrow_forward_ios,

@@ -7,6 +7,7 @@ import 'package:race_tracker/flow_1/f1_sign_in.dart';
 import 'package:race_tracker/flow_2/f2_sign_in.dart';
 import 'package:race_tracker/flow_3/f3_sign_in.dart';
 import 'package:race_tracker/flow_4/f4_sign_in.dart';
+import 'package:race_tracker/flow_5/f5_login.dart';
 
 class SelectOptions extends StatefulWidget {
   const SelectOptions({super.key});
@@ -130,23 +131,28 @@ class _SelectOptionsState extends State<SelectOptions> {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
-                  height: height / 18,
-                  width: width / 2,
-                  child: Center(
-                    child: Text(
-                      "Flow 5",
-                      style: GoogleFonts.poppins(
-                          textStyle: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 15,
-                              fontStyle: FontStyle.italic,
-                              color: Colors.white)),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => F5Login(),));
+                },
+                child: Container(
+                    height: height / 18,
+                    width: width / 2,
+                    child: Center(
+                      child: Text(
+                        "Flow 5",
+                        style: GoogleFonts.poppins(
+                            textStyle: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 15,
+                                fontStyle: FontStyle.italic,
+                                color: Colors.white)),
+                      ),
                     ),
-                  ),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Color(0xff3E45DD))),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color(0xff3E45DD))),
+              ),
             ),
           ],
         ),

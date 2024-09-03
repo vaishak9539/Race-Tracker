@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "200979994048",
+    "project_id": "race-tracker-2f208",
+    "storage_bucket": "race-tracker-2f208.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200979994048:android:3acd8bfb151e329cc9a425",
+        "android_client_info": {
+          "package_name": "com.example.race_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCroTUWM_toX1R-BqKExBhqv_1SYLZRcEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
